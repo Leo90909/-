@@ -1,10 +1,10 @@
 
 import streamlit as t
-import time
+#import time
 
 def check(password):
-    current_time = time.localtime()
-    date_time = time.strftime("%X", current_time)
+    #current_time = time.localtime()
+    #date_time = time.strftime("%X", current_time)
     count_spec_symbol = 0
     count_numbers = 0
     count_upper = 0
@@ -32,8 +32,8 @@ def check(password):
         t.text("Ваш пароль должен содержать символ ;")
     elif "!" in password:
         t.text("Ваш пароль не должен содержать символ !")
-    elif "90" in password:
-        t.write("Ваш пароль должен содержать цифры из даты", date_time)
+    #elif "90" in password:
+        #t.write("Ваш пароль должен содержать цифры из даты", date_time)
     elif "2024" in password:
         t.text("Ваш пароль не должен содержать 2024")
     elif "01." in password:
