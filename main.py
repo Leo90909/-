@@ -65,7 +65,5 @@ def check(password):
                 print("Ваш пароль должен содержать хотя бы не меньше 6 заглавных")
 
 t.title("Добро пожаловать")
-t.subheader("")
-t.markdown("center; color: red")
 r = t.text_input('Введите пароль', max_chars=300, type="Пароль")
 check(r)
